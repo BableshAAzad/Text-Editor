@@ -17,8 +17,7 @@ export default function TextForm(props) {
    props.showAlert("Text Cleared", "success");
   }
   const handleCopy =()=> {
-    // var text = document.getElementById("myBox");
-    // text.select();
+
     navigator.clipboard.writeText(text);
     props.showAlert("Copied to clipboard", "success");
   }
@@ -31,8 +30,7 @@ export default function TextForm(props) {
        setText(event.target.value);
     }
   const [text, setText] = useState(' ');
-//   setText("bableshaazad"); correct way to change the state
-//   text = "bableshaazad"; wrong way to change the state
+
   return (
     <>
     <div className='container' style={{color: props.mode==='dark'?'white':'#042743'}}>
