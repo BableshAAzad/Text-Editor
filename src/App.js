@@ -4,6 +4,7 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
+import Errorpage from './components/Errorpage';
 import { BrowserRouter as Main, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -41,7 +42,9 @@ function App() {
 <div className='container my-3'>
       <Routes>
         <Route exact path='/about' element={<About mode={mode} />}></Route>
-        <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try TextEditor - Word counter Charecter Counter, Remove Extra Spaces" mode={mode}/>}></Route>
+        <Route exact path="/" element={<TextForm showAlert={showAlert}
+         heading="Try TextEditor - Word counter, Charecter Counter, Remove Extra Spaces" mode={mode}/>}></Route>
+         <Route exact path='/*' element={<Errorpage></Errorpage>}></Route>
       </Routes>
 </div>
 </Main>

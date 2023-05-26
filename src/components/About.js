@@ -49,7 +49,7 @@ export default function About(props) {
         </div>
       </div>
       <br /><br />
-      <h4 style={{ color: '#23B1CD' }}>Description of functionalty</h4>
+      <h4 style={{ color: '#23B1CD' }}>Description of functionality</h4>
       <br />
       <div className='container' style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
         <dl>
